@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="305.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="clientPkg.ClientController">
+   <children>
+      <Label fx:id="lblName" layoutX="98.0" layoutY="94.0" minHeight="-Infinity" minWidth="-Infinity" text="Client Name">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtName" layoutX="206.0" layoutY="91.0" minHeight="-Infinity" minWidth="-Infinity" onAction="#connectServer" prefHeight="25.0" prefWidth="212.0" AnchorPane.leftAnchor="206.0" AnchorPane.rightAnchor="80.0" />
+      <Button fx:id="btnConnect" layoutX="219.0" layoutY="195.0" mnemonicParsing="false" onAction="#connectServer" text="Connect" />
+      <Label fx:id="lblMsgServer" layoutX="72.0" layoutY="45.0" text="Message From Server" visible="false">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="msgBox" layoutX="69.0" layoutY="80.0" prefHeight="182.0" prefWidth="368.0" visible="false" AnchorPane.leftAnchor="69.0" AnchorPane.rightAnchor="61.0" />
+   </children>
+</AnchorPane>

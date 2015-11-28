@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="serverPkg.serverController">
+   <children>
+      <HBox layoutX="20.0" layoutY="60.0" prefHeight="33.0" prefWidth="560.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+         <children>
+            <Label fx:id="lblClientListServ" minWidth="-Infinity" text="Client List" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Label>
+            <Region prefHeight="45.0" prefWidth="209.0" />
+            <Label fx:id="lblMessageBoxServ" minWidth="-Infinity" text="Message Box" HBox.hgrow="ALWAYS">
+               <HBox.margin>
+                  <Insets right="180.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <TableView fx:id="tableView" layoutX="20.0" layoutY="100.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="100.0">
+        <columns>
+          <TableColumn fx:id="nameColumn" maxWidth="113.0" minWidth="50.0" prefWidth="113.0" resizable="false" text="Name" />
+          <TableColumn fx:id="sendButtonColumn" maxWidth="1.7976931348623157E308" minWidth="86.0" prefWidth="86.0" resizable="false" text="Action" />
+        </columns>
+      </TableView>
+      <TextArea fx:id="msgBoxServer" layoutX="290.0" layoutY="100.0" prefHeight="200.0" prefWidth="297.0" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="290.0" AnchorPane.rightAnchor="13.0" AnchorPane.topAnchor="100.0" />
+   </children>
+</AnchorPane>
